@@ -153,9 +153,9 @@ jobs:
         with:
           preview-id: ${{ steps.comment.outputs.id }}
           compose-file: 'docker-compose.rendered.yml'
-          username: admin@uffizzicloud.com
-          server: https://devops-pro-europe-2022.uffizzicloud.com/
-          project: default
+          username: josh+1@uffizzi.com
+          server: https://devopseu.uffizzicloud.com/
+          project: 1
           password: ${{ secrets.UFFIZZI_PASSWORD }}
       - name: Check outputs
         run: echo "${{ steps.preview.outputs.id }} at ${{ steps.preview.outputs.url }}"
